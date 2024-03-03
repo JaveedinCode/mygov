@@ -25,75 +25,55 @@ class MyApp extends StatelessWidget {
                 Container
                 (height: 50,
                   decoration:  BoxDecoration(color: const Color.fromARGB(255, 170, 167, 167),
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(1),
                   ),
-                  child: const Row(
-                    children:[
-                    Padding(
-                      padding: EdgeInsets.only(left:50),
-                      child: Text('Xidmətlər',style: TextStyle(color:Color.fromARGB(255, 42, 59, 73),fontWeight:FontWeight.bold, fontSize: 17),
+                  child: Padding(
+                    padding: const EdgeInsets.only(right:170),
+                    child: ElevatedButton(style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      minimumSize: const Size.fromHeight(35.0),
+                      shape: RoundedRectangleBorder(
+                        side: const BorderSide(width: 5.0, color: Colors.grey),
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
-                    ), 
-                    Padding(
-                      padding: EdgeInsets.only(left:100),
-                      child: Text('Qurumlar üzrə',style: TextStyle(color:Color.fromARGB(255, 42, 59, 73),fontWeight:FontWeight.bold, fontSize: 17),
                     ),
-                   ),
-                   ],
-                   ),
-                  ),
-                   Padding(
-                    padding: const EdgeInsets.only(top:20),
-                    child: infoCard(title:'Ailə tərkibim', subtitle: 'Ədliyyə Nazirliyi',),
-                  ),
-                   Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'Cərimələrim', subtitle:'Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət',),
-                  ),
-                        Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'COVID-19 Əks-göstəriş sertifaktım', subtitle:'İcbari Tibbı Sığorta üzrə Dövlət Agentliyi',),
-                  ),
-                        Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'COVID-19 İmmuntet sertifaktım', subtitle:'İcbari Tibbı Sığorta üzrə Dövlət Agentliyi',),
-                  ),
-                        Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'COVID-19 Peyvənd sertifaktım', subtitle:'İcbari Tibbı Sığorta üzrə Dövlət Agentliyi',),
-                  ),
-                        Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'Daşınmaz əmlak məlumatlarım', subtitle:'Əmlak Məsələləri Dövlət Xidməti',),
-                  ),
-                        Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'Digər xidmət ödənişləri', subtitle:'Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət',),
-                  ),
-                    Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'Diplomlarım', subtitle:'Elm və Təhsil Nazirliyi',),
-                  ),
-                    Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'Doğum haqqında şəhadətnamələr', subtitle:'Ədliyyə Nazirliyi',),
-                  ),
-                   Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'Ədliyyə və məhkəmə ödənişləri', subtitle:'Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət',),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'Hərbi qeydiyyatım və xidmət barəsimdə məlumat', subtitle:'Səfərbərlik və hərbi xidmətə çağırış üzrə Dövlət xidməti',),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top:10),
-                    child: infoCard(title:'İcazələrin alınması və Monitorinq sitemi', subtitle:'Rəqəmsal inkişaf və Nəqliyyat Nazirliyi',),
-                  ),
+                      onPressed: () {}, 
+                    child: const Row(children:[Padding(
+                      padding: EdgeInsets.only(left:30.0),
+                      child: Text("Xidmətlər", style:TextStyle(color: Color.fromARGB(255, 42, 59, 73),fontWeight: FontWeight.bold, fontSize: 20),),
+                    )
+                    ],
+                 ),
+                 ),
+                ),
+               ),
+                  infoCard1(title:'Ailə tərkibim', subtitle: 'Ədliyyə Nazirliyi'),
+                   
+                  infoCard1(title:'Cərimələrim', subtitle:'Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət'),
+                 
+                  infoCard1(title:'COVID-19 Əks-göstəriş sertifaktım', subtitle:'İcbari Tibbı Sığorta üzrə Dövlət Agentliyi'),
+                
+                  infoCard1(title:'COVID-19 İmmuntet sertifaktım', subtitle:'İcbari Tibbı Sığorta üzrə Dövlət Agentliyi'),
+             
+                  infoCard1(title:'COVID-19 Peyvənd sertifaktım', subtitle:'İcbari Tibbı Sığorta üzrə Dövlət Agentliyi'),
+                 
+                  infoCard1(title:'Daşınmaz əmlak məlumatlarım', subtitle:'Əmlak Məsələləri Dövlət Xidməti'),
+              
+                  infoCard1(title:'Digər xidmət ödənişləri', subtitle:'Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət'),
+                 
+                  infoCard1(title:'Diplomlarım', subtitle:'Elm və Təhsil Nazirliyi'),
+               
+                  infoCard1(title:'Doğum haqqında şəhadətnamələr', subtitle:'Ədliyyə Nazirliyi'),
+              
+                  infoCard1(title:'Ədliyyə və məhkəmə ödənişləri', subtitle:'Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət'),
+           
+                  infoCard1(title:'Hərbi qeydiyyatım və xidmət barəsimdə məlumat', subtitle:'Səfərbərlik və hərbi xidmətə çağırış üzrə Dövlət xidməti'),
+             
+                  infoCard1(title:'İcazələrin alınması və Monitorinq sitemi', subtitle:'Rəqəmsal inkişaf və Nəqliyyat Nazirliyi'),
               ],
             ),
           ),
-          ),
+        ),
           bottomNavigationBar: 
           BottomNavigationBar(type:BottomNavigationBarType.fixed,
             items: const [BottomNavigationBarItem(icon:Icon(Icons.home), label: 'Ana səhifə'),
@@ -106,3 +86,4 @@ class MyApp extends StatelessWidget {
       );
   }
 }
+
