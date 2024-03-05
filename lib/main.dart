@@ -24,12 +24,9 @@ class MyApp extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(bottom:12.0),
-                  child: Container
-                (
-                    height: 50,
-                    decoration:  BoxDecoration(color: const Color.fromARGB(255, 170, 167, 167),
-                    borderRadius: BorderRadius.circular(1),
-                    ),
+                  child: Container(
+                    height: 55,
+                    color: Colors.grey,
                     child: ListTile(
                       title:
                       Row(children:[
@@ -43,19 +40,19 @@ class MyApp extends StatelessWidget {
                           side: const BorderSide(width: 1.0, color: Colors.grey),
                           borderRadius: BorderRadius.circular(5.0),
                         ),
-                                            ), 
+                        ), 
                         child: const Text('Xidmətlər', style: TextStyle(color:Color.fromARGB(255, 42, 59, 73)),    
-                                             ),
-                                            ),
+                       ),
+                   ),
                       ),
-                    ),
-                    Expanded(child: 
-                    Padding(
+                          ),
+                        Expanded(child: 
+                          Padding(
                       padding: const EdgeInsets.only(bottom:15.0, left: 10),
                       child: ElevatedButton(onPressed: (){},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color.fromARGB(255, 170, 167, 167),
-                        minimumSize: const Size.fromHeight(32.0),
+                        minimumSize: const Size.fromHeight(33.0),
                         shape: RoundedRectangleBorder(
                           side: const BorderSide(width: 1.0, color: Colors.grey),
                           borderRadius: BorderRadius.circular(5.0),
@@ -63,11 +60,11 @@ class MyApp extends StatelessWidget {
                       ), child: const Text('Qurumlar üzrə', style: TextStyle(color:Color.fromARGB(255, 42, 59, 73))
                       ),
                       ),
-                    ),
-                ),
-                ] 
-          ),
-          ),
+                                        ),
+                                    ),
+                                    ] 
+                              ),
+                              ),
                   ),
                 ),
                   infoCard1(title:'Ailə tərkibim', subtitle: 'Ədliyyə Nazirliyi'),
